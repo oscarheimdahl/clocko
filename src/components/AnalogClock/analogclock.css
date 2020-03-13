@@ -1,50 +1,7 @@
 .analog-clock {
   width: 500px;
   height: 500px;
-  border: 1px solid white;
+  border: 3px solid white;
   border-radius: 1000px;
-  /* display: grid; */
-  z-index: 1;
-}
-
-.analog-clock .dot {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: white;
-  left: calc(50% - 8px / 2);
-  top: calc(50% - 8px / 2);
-  border-radius: 9999px;
-  z-index: -1;
-}
-
-.analog-clock .pointer {
-  position: absolute;
-  height: 4px;
-  top: calc(50% - 4px / 2);
-  width: 240px;
-  left: calc(50% - 238px);
-  background: white;
-  top: 50%;
-  transform-origin: right;
-  /* transform-origin: 238px; */
-  z-index: -1;
-  border-radius: 9999px;
-  transition-duration: 1000ms;
-}
-
-.pointer.second {
-  /* background: red; */
-  height: 2px;
-  top: calc(50% - 2px / 2);
-}
-
-.pointer.minute {
-}
-
-.pointer.hour {
-  width: 200px;
-  left: calc(50% - 198px);
-  /* height: 10px;
-  top: calc(50% - 3px); */
+  /* z-index: 1; */
 }

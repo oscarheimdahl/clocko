@@ -1,0 +1,29 @@
+.analog-clock .pointer {
+  position: relative;
+  height: 4px;
+  top: calc(50% - 4px / 2);
+  width: 220px;
+  left: calc(50% - 218px);
+  background: white;
+  top: 50%;
+  transform-origin: right;
+  /* z-index: -1; */
+  border-radius: 9999px;
+}
+.analog-clock .pointer:hover {
+  cursor: pointer;
+}
+
+.pointer.second {
+  height: 2px;
+  top: calc(50% + 2px / 2 - 8px);
+}
+
+.pointer.minute {
+}
+
+.pointer.hour {
+  width: 150px;
+  left: calc(50% - 148px);
+  top: calc(50% - 4px / 2 - 2px);
+}

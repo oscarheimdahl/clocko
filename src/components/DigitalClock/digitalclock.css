@@ -1,0 +1,43 @@
+.digital-clock {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  /* height: 700px; */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.digital-clock .number-container {
+  font-size: 8em;
+  padding: 0 100px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  /* border-bottom: 1px solid white; */
+}
+
+.digital-clock .number-container::after {
+  content: '';
+  font-size: 40px;
+  position: relative;
+  display: block;
+  width: 160%;
+  left: -30%;
+  height: 10px;
+  border: 1px solid white;
+  border-top: none;
+  line-height: 80px;
+}
+
+#digital-hour::after {
+  content: 'Hours';
+}
+
+#digital-minute::after {
+  content: 'Minutes';
+}
+
+#digital-second::after {
+  content: 'Seconds';
+}

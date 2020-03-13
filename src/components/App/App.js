@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AnalogClock from '../AnalogClock/AnalogClock';
 import './app.css';
+import { DigitalClock } from '../DigitalClock/DigitalClock';
+import ProgressBars from '../ProgressBars/ProgressBars';
 
 export default function App() {
   const [time, updateTime] = useState({
@@ -19,6 +21,8 @@ export default function App() {
   return (
     <div className="app">
       <AnalogClock time={time}></AnalogClock>
+      <DigitalClock time={time}></DigitalClock>
+      <ProgressBars time={time}></ProgressBars>
     </div>
   );
 }

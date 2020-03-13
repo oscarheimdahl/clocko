@@ -1,0 +1,32 @@
+.progress-bars-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.progress-bars {
+  display: grid;
+  align-content: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: calc(100%);
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.progress-bars .progress-bar {
+  background: white;
+  opacity: 0.8;
+  transition-timing-function: linear;
+  transition-duration: 1000ms;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 100px;
+
+  font-size: 8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-right: 20px;
+}
