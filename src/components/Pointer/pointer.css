@@ -1,11 +1,10 @@
 .analog-clock .pointer {
   position: relative;
   height: 4px;
-  top: calc(50% - 4px / 2);
   width: 220px;
-  left: calc(50% - 218px);
+  left: calc(50% - 219px);
   background: white;
-  top: 50%;
+  top: calc(50% - 26px - 5px - 2px);
   transform-origin: right;
   /* z-index: -1; */
   border-radius: 9999px;
@@ -16,7 +15,7 @@
 
 .pointer.second {
   height: 2px;
-  top: calc(50% + 2px / 2 - 8px);
+  top: calc(50% - 2px / 2 - 8px - 26px - 5px);
 }
 
 .pointer.minute {
@@ -24,6 +23,6 @@
 
 .pointer.hour {
   width: 150px;
-  left: calc(50% - 148px);
-  top: calc(50% - 4px / 2 - 2px);
+  left: calc(50% - 150px);
+  top: calc(50% - 4px - 2px - 26px - 5px);
 }

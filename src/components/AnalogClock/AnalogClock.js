@@ -16,6 +16,7 @@ const AnalogClock = ({ time }) => {
   return (
     <div className="analog-clock-wrapper">
       <div className="analog-clock">
+        <div className="dot"></div>
         <Toggle onClick={() => setTick(!tick)}></Toggle>
         <Pointer
           background={colors[colorIndices.minute]}

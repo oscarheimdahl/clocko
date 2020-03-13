@@ -1,7 +1,27 @@
+.analog-clock-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
 .analog-clock {
   width: 500px;
   height: 500px;
   border: 3px solid white;
   border-radius: 1000px;
   /* z-index: 1; */
+  /* display: flex; */
+}
+
+.analog-clock .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  /* background: white;
+  background: red; */
+  position: relative;
+  left: calc(50% - 2.5px);
+  top: calc(50% - 2.5px);
 }
